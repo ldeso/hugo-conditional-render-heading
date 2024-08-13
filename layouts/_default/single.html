@@ -1,0 +1,5 @@
+{{- define "main" }}
+  {{- .Scratch.Set "offset" 0 }}
+  {{- .Content }}
+  <p>(single.html) .Scratch.Get "offset" = {{ .Scratch.Get "offset" }} (should be 0)
+{{- end }}

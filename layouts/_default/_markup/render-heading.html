@@ -1,0 +1,6 @@
+{{- $offset := .Page.Scratch.Get "offset" }}
+{{- $level := add .Level $offset }}
+  <h{{ $level }}>
+    <a class="Heading-link u-clickable" href="{{ .Page.RelPermalink }}">{{ safeHTML .Text }} (H{{ $level }})</a>
+  </h{{ $level }}>
+  <p>(render-heading.html) .Scratch.Get "offset" = {{ $offset }} (should be 0 on single page and 1 on home page)

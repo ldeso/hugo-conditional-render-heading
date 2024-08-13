@@ -1,0 +1,7 @@
+{{- define "main" }}
+{{- range .Paginator.Pages }}
+  {{- .Scratch.Set "offset" 1 }}
+  {{- .Content }}
+  <p>(home.html) .Scratch.Get "offset" = {{ .Scratch.Get "offset" }} (should be 1)
+{{- end }}
+{{- end }}

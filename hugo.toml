@@ -1,0 +1,5 @@
+baseURL = "https://ldeso.github.io/hugo-conditional-render-heading/"
+disableKinds = ["section", "rss", "sitemap", "taxonomy"]
+
+[pagination]
+  disableAliases = true
